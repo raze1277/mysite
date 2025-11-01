@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+}
+
+.scene {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.fox {
+  position: absolute;
+  top: 40px;
+  left: -300px;
+  width: 200px;
+  animation: run 6s linear infinite;
+}
+
+@keyframes run {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 110%;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Різні кнопки</title>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #002b5c;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Кольори та форми */
+.btn-red { background-color: #e74c3c; }
+.btn-blue { background-color: #3498db; }
+.btn-green { background-color: #2ecc71; }
+.btn-yellow { background-color: #f1c40f; color: #002b5c; }
+.btn-purple { background-color: #9b59b6; }
+.btn-rounded { background-color: #1abc9c; border-radius: 50px; }
+.btn-outline { background-color: transparent; color: #e67e22; border: 2px solid #e67e22; }
+.btn-gradient { background: linear-gradient(90deg, #ff7e5f, #feb47b); }
+.btn-large { background-color: #34495e; padding: 18px 30px; }
+.btn-small { background-color: #95a5a6; padding: 8px 15px; }
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Різні кнопки</h1>
+    <div class="buttons">
+        <button class="btn-red">Червона</button>
+        <button class="btn-blue">Синя</button>
+        <button class="btn-green">Зелена</button>
+        <button class="btn-yellow">Жовта</button>
+        <button class="btn-purple">Фіолетова</button>
+        <button class="btn-rounded">Кругла</button>
+        <button class="btn-outline">Контурна</button>
+        <button class="btn-gradient">Градієнтна</button>
+        <button class="btn-large">Велика</button>
+        <button class="btn-small">Маленька</button>
+    </div>
+</div>
+</body>
+</html>
